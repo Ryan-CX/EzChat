@@ -1,5 +1,5 @@
 import React from 'react';
-import { GoogleOutlined, FacebookOutlined } from '@ant-design/icons';
+import { GoogleOutlined } from '@ant-design/icons';
 import 'firebase/app';
 import { auth } from '../Firebase'; //import the firebase.js
 import firebase from 'firebase/app';
@@ -17,16 +17,6 @@ const Login = () => {
 				>
 					<GoogleOutlined />
 					Sign In With Google
-				</div>
-				<br />
-				<br />
-				<div
-					className='login-button facebook'
-					onClick={() =>
-						auth.signInWithRedirect(new firebase.auth.FacebookAuthProvider())
-					}
-				>
-					<FacebookOutlined /> Sign In With Facebook
 				</div>
 			</div>
 		</div>
